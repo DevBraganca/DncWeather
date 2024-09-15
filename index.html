@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>DncWeather</title>
+</head>
+<body>
+    <header>
+            <h1>DncWeather</h1>
+        <div class="header_subtitle">
+            <p>Endereços</p>
+            <p>Previsão do tempo</p>
+        </div>
+    </header>
+    <section class="title">
+        <h1>
+            Descubra mais com precisão: <br>
+            Previsões do tempo e endereços <br>
+            em tempo real. <br>
+            <img src="./assets/weather.svg">
+        </h1>
+    </section>
+    <form id="weather-form">
+        <label for="name">Primeiro Nome:</label> 
+        <input type="text" id="name" placeholder="Insira seu primeiro nome">
+
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" placeholder="Insira seu e-mail">
+        
+        <label for="cep">Insira o CEP:</label>
+        <input type="text" id="cep" placeholder="Insira o CEP">
+        
+        <label for="">Digite a latitude e longitude para saber a previsão:</label>
+        <div>
+        <input type="text" id="latitude" placeholder="Latitude">
+        <input type="text" id="longitude" placeholder="Longitude">
+        </div>
+        
+        <button type="submit">Acessar</button>
+    </form>
+    <main id="cep-resultado">
+            <h1>Previsão da busca por CEP:
+            <img src="./assets/loc.svg"></h1>
+        <div class="local">
+        <div class="header_local">
+            <p>Logradouro/nome</p>
+            <p>Bairro/Distrito</p>
+            <p>Localidade/UF</p>
+        </div>
+        <div class="body_local">
+            <p id="logradouro"></p>
+            <p id="bairro"></p>
+            <p id="localidade"></p>
+        </div>
+        </div>
+    </main>
+    <aside id="weather-result">
+        <h1>Previsão do tempo na região
+            <img src="./assets/cloud.svg">
+        </h1>
+        <div class="aside_body">
+            <p id="weather"></p>
+        </div>
+    </aside>
+    <footer>
+        <p>Termos de uso | Politica de Privacidade</p>
+    </footer>
+<script src="script.js"></script>
+</body>
+</html>
